@@ -90,6 +90,7 @@ the results, have a makefile which plots individual city data and
 combined plots of the price distribution between cities,  e.g.:
 
 > ** Solution **
+> ```
 > YEAR := "2017"
 > 
 > .PHONY: all
@@ -132,7 +133,7 @@ combined plots of the price distribution between cities,  e.g.:
 > 	rm -f figs/chicago.png
 > 	rm -f figs/toronto-chicago.png
 > 	rm -f figs/all.png
-
+> ```
 
 <!-- -------------------------------------------------------------------------------- -->
 
@@ -209,7 +210,7 @@ merged .csvs are present and produces `figs/toronto.png` `figs/chicago.png` and 
 write a simple Makefile containing three rules which will only run those scripts that are necessary.
 
 > **Solution**
->
+> ```
 > data/raw/toronto.zip data/raw/chicago.zip: download_data.sh
 > 	./download_data.sh 
 >
@@ -218,6 +219,7 @@ write a simple Makefile containing three rules which will only run those scripts
 >
 > figs/toronto.png figs/chicago.png figs/toronto-chicago.png: data/merged/toronto.csv data/merged/chicago.csv plot_figs.sh
 > 	./plot_figs.sh
+> ```
 
 2. 
    - Write a Make rule to run `bin/patient-total` to recreat the daily dosage file for one patient.
