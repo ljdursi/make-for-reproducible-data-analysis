@@ -1,11 +1,11 @@
 # Make for Reproducible Analysis
 
 Things I'm not sure of:
-    - POSIX only or GNU?  POSIX only is safest, but if I can assume GNU I'm tempted to go full-GNUism which I'm not sure is wise
-    - Include debugging or not?
-    - Planning to only use ":=" for macro assignment, but will this be confusing for students when they inevitably see "=" in places?  
-        - Even if it is, is it worth getting into recursively vs simply expanded macros?
-    - Start with .DEFAULT_GOAL just part of the recipe, or start with empirically "discovering" how the implicit default goal is determined and then adding one explicitly?
+- POSIX only or GNU?  POSIX only is safest, but if I can assume GNU I'm tempted to go full-GNUism which I'm not sure is wise
+- Include debugging or not?
+- Planning to only use ":=" for macro assignment, but will this be confusing for students when they inevitably see "=" in places?  
+    - Even if it is, is it worth getting into recursively vs simply expanded macros?
+- Start with .DEFAULT_GOAL just part of the recipe, or start with empirically "discovering" how the implicit default goal is determined and then adding one explicitly?
 
 ## Step 1: Brainstorming
 
